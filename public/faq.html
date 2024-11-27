@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Your Q&A Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: #333;
+            cursor: pointer;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #666;
+            line-height: 1.6;
+            display: none; /* Initially hide answers */
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <button style="display: inline-block;margin-right: 20rem; border: 1px solid black;width: 50px; border-radius: 20%;"><a href="Home.html">Back</a></button>
+        <h1 style="display: inline-block; margin-right: 20rem;">Frequently Asked Questions</h1>
+    </header>
+    <main>
+        <section class="faq-item">
+            <h2 onclick="toggleAnswer(1)">How do I ask a question?</h2>
+            <p id="answer1">To ask a question, simply click the "Ask a Question" button on the homepage. Provide details about your question and submit it. Our community of experts will help provide answers.</p>
+        </section>
+
+        <section class="faq-item">
+            <h2 onclick="toggleAnswer(2)">Can I edit my answers?</h2>
+            <p id="answer2">Yes, you can edit your answers. Log in to your account, navigate to the question you answered, and click the "Edit" button below your answer. Make your changes and save them.</p>
+        </section>
+
+        <section class="faq-item">
+            <h2 onclick="toggleAnswer(3)">Is this service free to use?</h2>
+            <p id="answer3">Yes, our Q&A website is completely free to use. You can ask questions, provide answers, and access information without any cost.</p>
+        </section>
+
+        <section class="faq-item">
+            <h2 onclick="toggleAnswer(4)">How can I contact support?</h2>
+            <p id="answer4">If you need assistance or have any issues, you can contact our support team through the "Contact" page. We'll respond to your queries as soon as possible.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Your Q&A Website</p>
+    </footer>
+
+    <script>
+        function toggleAnswer(id) {
+            var answer = document.getElementById("answer" + id);
+            if (answer.style.display === "block") {
+                answer.style.display = "none";
+            } else {
+                answer.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <title>Q&A</title>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400&family=Lora:ital,wght@1,600&family=Urbanist:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="registration-header">
+        <div class="up-container">
+            <h1 class="headings">Quorum</h1>
+            <p class="para">"Where Minds meet Knowledge"</p>
+        </div>
+    </header>
+    <main class="main-form">
+        <section class="user-box login-section" >
+            <div class="registration">
+                <div class="grid-container">
+                    <div class="form-login">
+                        <h2 ><span style="color: white;">Welcome </span>Friend</h2>
+                        <p class="paraa">Already <span style="color: #c70039;">a user</span></p>
+                        <button class="login-btn">Login here</button>
+                    </div>
+                    
+                    <div class="registration-form">
+                        <h2>Create account</h2>
+                        <p>Use email for registration</p>
+                    <form action="/auth/signup" method="post">
+                        <div class="input-field">
+                            <label for="username">
+                                <input type="text" name="username" id="username" placeholder="Name">
+                            </label>
+                        </div>
+
+                        <div><label for="Email">
+                                <input type="email" name="email" id="Email" placeholder="Email">
+                            </label></div>
+                            
+                        <div>
+                            <label for="password">
+                                <input type="password" name="password" id="password" placeholder="Password">
+                            </label>
+                        </div>
+                        <div class="input-field">
+                            <input type="submit" value="register">
+                        </div>
+
+                    </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="login">
+                <div class="grid-container">
+                    <div class="form-login">
+                        <h2 style="color:black;">Welcome<span style="color: aliceblue;"> to</span> our site</h2>
+                        <p class="paraa">Join<span style="color: #c70039;"> Our </span> Family</p>
+                        <button class="register-btn">Register here</button>
+                    </div>
+                    
+                    <div class="login-form">
+                        <h2>Sign in</h2>
+                        <p>Use your account</p>
+                    <form id="loginForm" action=/auth/login method="post">
+                        <div><label for="Email1">
+                                <input type="email" name="email" id="Email1" placeholder="Email">
+                            </label></div>
+                            
+                        <div>
+                            <label for="password1">
+                                <input type="password" name="password" id="password1" placeholder="Password">
+                            </label>
+                        </div>
+                        <div class="input-field">
+                            <input type="submit" value="login">
+                        </div>
+
+                    </form>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+    </main>
+<script>
+    const user_con=document.querySelector('.user-box');
+    const regis_btn=document.querySelector('.register-btn');
+    const login_btn=document.querySelector('.login-btn');
+
+    regis_btn.addEventListener('click', ()=>{
+        user_con.classList.add('login-section')
+    })
+
+    login_btn.addEventListener('click', ()=>{
+        user_con.classList.remove('login-section')
+    })
+</script>
+</body>
+</html>

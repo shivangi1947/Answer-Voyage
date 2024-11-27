@@ -1,0 +1,527 @@
+body{
+    font-family: 'Urbanist', sans-serif;
+    background-color: #264653;
+    overflow-x: hidden;
+    background-image: url(./images/background-image-for-1800-x-1200-px-which-include-peoples-design-with-less-crowd-more-white-space.png);
+}
+
+
+body.light-mode {
+    background-color: #264653;
+    color: #000000;
+}
+
+body.dark-mode  {
+    background-color: #000000;
+    color: #ffffff;
+} 
+
+
+side-nav-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.side-nav-button:hover{
+    background-color: grey;
+    border-radius: 30%;
+}
+.navbar-brand{
+    font-family: 'Lora', serif;
+    display: flex;
+    align-items: center;
+}
+.mynavbar{
+    
+    z-index: 3;
+    background-color:white ;
+    color: white !important;
+}
+
+
+img{
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+.button-hide{
+    display: none;
+}
+@media(min-width:987px){
+    .my-bars-btn{
+        display: none;
+    }
+
+}   
+.logo{
+       padding-right: 15rem;
+}
+
+main{
+    position: absolute;
+    width: 100%;
+    top: 4.3rem;
+    z-index: 1;
+}
+app-side-nav{
+    border-top: 1px solid white;
+    position: absolute;
+    border: 1px solid black;
+    left: 0rem;
+    width: 250px;
+    height: calc(100vh - 4rem);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    background-color:#22A699;
+}
+.side-nav-content{
+    width: 14rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.nav-list{
+    list-style: none;
+    height: 100%;
+    padding: 0%;
+    margin-bottom: 0%;
+}
+
+.nav-list-item{
+    
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 14rem;
+}
+.nav-list-item:hover{
+    background-color: rgba(120,120,120,0.3);
+    border-radius: 10px;
+}
+.nav-list-item i{
+    
+    font-size: 20px;
+    height: 25px;
+    width: 25px;
+    margin-right: 15px;
+    margin-left: 10px;
+    text-align: center;
+    line-height: 25px;
+}
+
+.nav-list-item span{
+    width: 100px;
+    text-transform: capitalize;
+}
+span>a{
+    text-decoration: none;
+    color: black;
+
+}
+.display-area{
+    z-index: 2;
+    position: absolute;
+    left: 250px;
+    width: calc(100% - 250px);
+    margin-left: .3rem;
+    margin-top: .2rem;
+    background-color: white;
+    
+}
+.my-button{
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+}
+.mysearch{
+    border:1px solid black;
+   
+    background-color: white;
+}
+.mysearch:hover{
+    background-color: #3085C3;
+}
+
+
+.myprofile{
+    margin-left: 2rem;
+}
+.grid-container{
+    position: relative;
+    display: grid;  
+    gap: 10px;
+    
+    margin-right: 1em;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(6 , 1fr);
+    grid-auto-rows: 200px;    
+}
+.mymodal{
+    background-image: url(./images/ackground-which-says-ask-me-anything-with-color-using-only-black-white-grey--design-with-r.png);
+    background-size: cover;
+    background-attachment: fixed;
+    
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-2{ 
+    grid-row: span 2;
+    justify-content: center;
+    align-items: center;
+}
+.user-details{
+    width: 10rem;
+}
+/* .box-1, .box-4 , .box-8, {
+    
+} */
+.box-9,.box-7,.box-5{
+    background-color: transparent
+}
+
+.box-1{
+    display: flex;
+    flex-direction: column;
+}
+.grid{
+    border-radius: 20px 20px 20px 20px;
+    
+    font-family: 'Roboto', sans-serif;
+}
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+.Answer {
+    padding-bottom:  2em;
+    font-size: 12px;
+    margin-bottom: 3px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: white;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease .0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .Answer:hover {
+    background-color: #50D890;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
+  .Answer:active {
+    transform: translateY(-1px);
+  }
+  /* From uiverse.io by @alshahwan */
+/* From uiverse.io by @alshahwan */
+.follow {
+    background-color: #fff;
+    border: 1px solid #0077b5;
+    padding: 5px;
+    position: relative;
+    width: 7.2em;
+    height: 2em;
+    transition: 0.5s;
+    font-size: 17px;
+    border-radius: 0.4em;
+  }
+  
+  .follow p {
+    position: absolute;
+    top: 0.4em;
+    left: 1.2em;
+    margin: 0;
+    padding: 0;
+    transition: .5s;
+    color: #0077b5;
+  }
+  
+  .follow svg {
+    position: absolute;
+    top: 0.45em;
+    right: 0.5em;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    transition: 0.5s;
+    height: 1em;
+    fill: #fff
+  }
+  
+  .follow:hover p {
+    left: 0.6em;
+    color: #fff
+  }
+  
+  .follow:hover svg {
+    opacity: 1;
+  }
+  
+  .follow:hover {
+    background-color: #0077b5;
+  }
+  
+.answer{
+    display: flex;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.2s;
+}
+.answer p{
+    padding-top: .2rem;
+    line-height: 1.6;
+    font-size:1.2rem;
+    margin-left: 2rem;
+}
+.user-details{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    width: 45rem;
+    
+}
+.mybutton {
+    --color: #0077ff;
+    font-family: 'Bebas Neue', sans-serif;
+    display: inline-block;
+    width: 6em;
+    height: 2.6em;
+    line-height: 2.5em;
+    overflow: hidden;
+    margin: 20px;
+    font-size: 17px;
+    z-index: 1;
+    color: var(--color);
+    border: 2px solid var(--color);
+    border-radius: 6px;
+    position: relative;
+  }
+  
+  .mybutton::before {
+    position: absolute;
+    content: "";
+    background: var(--color);
+    width: 150px;
+    height: 200px;
+    z-index: -1;
+    border-radius: 50%;
+  }
+  
+  .mybutton:hover {
+    color: white;
+  }
+  
+  .mybutton:before {
+    top: 100%;
+    left: 100%;
+    transition: .3s all;
+  }
+  
+  .mybutton:hover::before {
+    top: -30px;
+    left: -30px;
+  }
+  
+.upvote{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.6rem;
+    margin-left: 1.6rem;
+}
+.faq.active .answer{
+    max-height: 40px;
+}
+
+@media(max-width:987px){
+    .transform{
+        transform: translateX(-250px);
+    }
+    .display-area{
+        transform: translateX(-250px);
+        width: 100vw;
+        margin-right: 2px;
+    }
+}
+
+
+.modal1 {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the modal */
+    width: 400px; /* Set the width of the modal */
+    background-color: #ffffff; /* White background */
+    z-index: 1;
+    border: 2px solid #333; /* Border style */
+    border-radius: 10px; /* Rounded corners */
+    font-family: Arial, sans-serif; /* Font family */
+  }
+
+  /* Styles for the modal content */
+  .modal-content1 {
+    padding: 20px;
+  }
+
+  /* Styles for the close button */
+  .close1 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+
+  /* Styles for the category dropdown */
+  .category-dropdown {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc; /* Border style for the dropdown */
+    border-radius: 5px;
+  }
+
+  /* Styles for the question input */
+  #questionInput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc; /* Border style for the input */
+    border-radius: 5px;
+  }
+
+  /* Styles for the submit button */
+  #submitQuestion {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+#regis_btn{
+    
+    border-radius: 10px;
+    color: rgb(23, 109, 109);
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the modal */
+    width: 400px; /* Set the width of the modal */
+    background-color: #ffffff; /* White background */
+    z-index: 1;
+    border: 2px solid #333; /* Border style */
+    border-radius: 10px; /* Rounded corners */
+    font-family: Arial, sans-serif; /* Font family */
+    max-height: 420px;
+  }
+
+  /* Styles for the modal content */
+  .modal-content {
+    padding: 20px;
+  }
+
+  /* Styles for the close button */
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+
+  /* Styles for the category dropdown */
+  .category-dropdown {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc; /* Border style for the dropdown */
+    border-radius: 5px;
+  }
+
+  /* Styles for the question input */
+  .answer-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc; /* Border style for the input */
+    border-radius: 5px;
+  }
+
+  /* Styles for the submit button */
+  .submit-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+.user-detail{
+    height: 22rem;
+    background-image: url(./images/wepik-export-20231005165941rIEE.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+#myInput1{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc; /* Border style for the dropdown */
+    border-radius: 5px;
+}
+#myInput2{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc; /* Border style for the dropdown */
+    border-radius: 5px;
+}
+#myInput3{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc; /* Border style for the dropdown */
+    border-radius: 5px;
+}
+#myInput4{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc; /* Border style for the dropdown */
+    border-radius: 5px;
+}
+#myInput5{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc; /* Border style for the dropdown */
+    border-radius: 5px;
+}
+#myInput6{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc; /* Border style for the dropdown */
+    border-radius: 5px;
+}
+.mynavigator{
+    margin-right: 40px;
+}

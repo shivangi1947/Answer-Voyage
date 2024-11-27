@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Urbanist', sans-serif;}
+:root{
+    --var-primary-color:#2888E8FF;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-image: url(./images/2505590.jpg);
+    background-attachment: fixed;
+    background-size:cover ;
+}
+.registration-header{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+.para{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    margin-bottom: .7rem;
+}
+.headings{
+    font-family: 'Lora', serif;
+    font-size: 3rem;
+    color: red;
+}
+.up-container{
+    margin-top: 2em;
+    height: 10vh;
+    width: 50%;
+    background-color:white;
+    border-radius:10px 10px 10px 10px;
+    text-align: center;
+}
+h1,h2,h3,h4{
+    font-family: 'lexend Deca', sans-serif;
+    color: #000;
+}
+p{
+    color: black;
+    
+}
+h1{
+    font-size: 4.8rem;
+}
+h2{
+    font-size: 3rem;
+}
+p{
+    font-size: 1.8rem;
+    letter-spacing: 0.08rem;
+}
+.paraa{
+    color:#3085C3;
+    font-weight: bold;    
+}
+button,input[type="submit"]{
+    border:.1rem solid #fff;
+    border-radius: 10px 10px 10px 10px;
+    outline: none;
+    padding: .6rem 1.2rem;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    letter-spacing: 0.05;
+    background-color: transparent;
+    color:#fff;
+    cursor: pointer;
+}
+/*now registeration*/
+.main-form{
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2,26vw);
+    grid-template-rows: 340px;
+}
+.registration , .login{
+    min-height: 20rem;
+    min-width: 40vw;
+    background-color: white ;
+}
+.login .form-login{
+    background-image: linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.4)),
+    url(./images/Sign\ up-cuate.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.form-login{
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.3)),
+    url(./images/Tablet\ login-cuate.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 3rem 2rem;
+}
+.form-login p{
+    width: 30ch;
+    text-align: center;
+    margin: 2rem 0 3rem 0;
+
+}
+.form-login button{
+    background-color: #fff;
+    color: #000;
+}
+
+.form-login button:hover{
+    background-color: #3085C3;
+    color:#fff;
+}
+.registration-form,.login-form{
+    width: 100%;
+    min-height: inherit;
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.registration-form p,.login-form p{
+    margin: 1rem 0 .7rem 0;
+}
+input{
+    width: 20rem;
+    margin: 0.7rem 0;
+    border: none;
+    background-color: #e8e8e8;
+    padding: 1rem 1.8rem;
+    letter-spacing: 0.06rem;
+}
+input[type="submit"]{
+    margin-top: 1rem ;
+    min-width: 10rem;
+    background-color: var(--var-primary-color);
+    color: #fff;
+}
+
+.registration:not(.login-section){
+    display: none;
+}
+
+.login-section .registration{
+    display: block;
+}
+.login-section .login{
+    display: none;
+}
+
+@media screen and (max-width: 600px){
+    .grid-container{
+        grid-template-columns: 1fr;
+    }
+    .registration,.login{
+        min-width: 90vw;
+    }
+    .form-login{
+        order:1;
+    }
+    .registration,.login{
+        order: 0;
+    }
+    .font-text p{
+        width: 25ch;
+    }
+}

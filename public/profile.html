@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Profile</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    #userProfile {
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      text-align: center;
+      max-width: 400px;
+      width: 100%;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    strong {
+      color: #777;
+    }
+
+    span {
+      font-weight: bold;
+      color: #444;
+    }
+
+    /* Styling for the profile picture */
+    #userProfilePicture {
+      width: 100px;
+      height: 100px;
+      border: 3px solid #333;
+      border-radius: 50%;
+      margin: 20px auto;
+      display: block;
+    }
+
+    /* Styling for the back button */
+    #backButton {
+      background-color: #0077ff; /* Interactive blue color */
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    /* Styling for the back button on hover */
+    #backButton:hover {
+      background-color: #0055cc; /* Slightly darker blue on hover */
+    }
+
+    /* Styling for the user profile container */
+    #userProfile {
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      text-align: center;
+      max-width: 400px;
+      width: 100%;
+    }
+
+    /* Styling for the user profile heading */
+    h1 {
+      color: #333;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    /* Styling for user details */
+    p {
+      margin: 10px 0;
+      font-size: 18px;
+    }
+
+    /* Styling for the user name */
+    #userName {
+      color: #333;
+      font-weight: bold;
+    }
+
+    /* Styling for the user role */
+    #userRole {
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <div id="userProfile">
+    <img id="userProfilePicture" src="images/user.jpg" alt="User Profile Picture">
+    <h1>User Profile</h1>
+    <p><strong>Name:</strong> <span id="userName">Samarth Gangrade</span></p>
+    <p><strong>Email:</strong> <span id="userRole">samarthgangrade@gmail.com</span></p>
+    <button id="backButton"><a href="./home.html">Back to Home</a></button>
+  </div>
+
+  <script>
+     // Get the query parameters from the URL
+     const urlParams = new URLSearchParams(window.location.search);
+        const name = urlParams.get('name');
+
+        // Display the user's name on the page
+        const userNameElement = document.getElementById('userName');
+        if (name) {
+            userNameElement.textContent = name;
+        } else {
+            userNameElement.textContent = 'Samarth Gangrade';
+        }
+  </script>
+  
+</body>
+</html>
